@@ -142,7 +142,22 @@ def create_user_proxy(model_client):
 
 async def run_software_development_team():
     # 初始化客户端和智能体...
-    model_client = create_openai_model_client()
+    # model_client = create_openai_model_client()
+
+    model_client = OpenAIChatCompletionClient(
+        model="deepseek-chat",
+        api_key=os.getenv("DEEPSEEK_API_KEY"),
+        base_url="https://api.deepseek.com/v1",
+        model_info={
+            "function_calling": True,
+            "max_tokens": 4096,
+            "context_length": 32768,
+            "vision": False,
+            "json_output": True,
+            "family": "deepseek",
+            "structured_output": True,
+        }
+    )
     product_manager = create_product_manager(model_client)
     engineer = create_engineer(model_client)
     code_reviewer = create_code_reviewer(model_client)
