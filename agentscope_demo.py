@@ -32,4 +32,3 @@ class CustomAgent(AgentBase):
         # 智能体的观察逻辑（可选）
         self.memory.add(x)
 
-        
