@@ -3,7 +3,7 @@ import os
 from hello_agents import HelloAgentsLLM, ToolRegistry, CalculatorTool
 from dotenv import load_dotenv
 
-from my_simple_agent import MySimpleAgent
+from agent.my_simple_agent import MySimpleAgent
 
 load_dotenv()
 

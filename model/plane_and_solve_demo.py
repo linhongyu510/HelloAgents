@@ -14,7 +14,7 @@ PLANNER_PROMPT_TEMPLATE = """
 ```
 """
 
-from llm_client import HelloAgentsLLM
+from llm.llm_client import HelloAgentsLLM
 
 class Planner:
     def __init__(self, llm_client):

@@ -3,7 +3,7 @@ from typing import Optional, Iterator
 
 from hello_agents import SimpleAgent, HelloAgentsLLM, Message, ToolRegistry
 
-from config import Config
+from config.config import Config
 
 
 class MySimpleAgent(SimpleAgent):

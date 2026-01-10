@@ -2,8 +2,8 @@ import re
 
 from dotenv import load_dotenv
 
-from llm_client import HelloAgentsLLM
-from tool_executor import ToolExecutor
+from llm.llm_client import HelloAgentsLLM
+from tool.tool_executor import ToolExecutor
 
 load_dotenv()
 

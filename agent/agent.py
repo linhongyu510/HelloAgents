@@ -3,8 +3,8 @@ from typing import Optional, List
 
 from hello_agents import HelloAgentsLLM
 
-from config import Config
-from message import Message
+from config.config import Config
+from message.message import Message
 
 
 class Agent(ABC):
